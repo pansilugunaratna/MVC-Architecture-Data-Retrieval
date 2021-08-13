@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="us">
+<head>
+    <title> User search</title>
+    <script src="view.js"></script>
+    <link href="view.css" rel="stylesheet">
+</head>
+<body>
+<!-- SEARCH FORM -->
+<div id="container">
+    <form onsubmit="return doSearch()">
+
+        <label for="search-name"></label>
+        <select id="search-name">
+            <option value="fname">First Name</option>
+            <option value="lname">Last Name</option>
+        </select>
+        <div>
+            <label for="search-value"></label>
+            <input id="search-value" type="text"/><br><br>
+        </div>
+
+        <input type="submit" value="Search" id="button"/>
+        <br><br>
+    </form>
+</div>
+
+
+<!-- SEARCH RESULTS -->
+<table id="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+    </thead>
+    <tbody id="results"></tbody>
+</table>
+
+</body>
+</html>
